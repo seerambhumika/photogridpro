@@ -1,0 +1,167 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("https://i.pinimg.com/736x/0d/f7/a4/0df7a401b4759abcc86cd99f017eb1a1.jpg");
+    animation: rainbow  2s linear infinite;
+    text-align: center;
+}
+h1 {
+    margin: 10px 0;
+    color: #f4f1f1;
+    position: center;
+    font-size: 4em;
+    letter-spacing: 5px;
+    color: #488449;
+    text-transform: uppercase;
+    width: 105%;
+    text-align: center;
+    line-height: 0.7em;
+    outline: none;
+    animation: animate 5s linear infinite;
+}
+
+
+h1{
+    color:white;
+    text-shadow: 0px 0px 10px rgb(62, 232, 113),
+    0px 0px 20px rgb(233, 240, 239),
+    0px 0px 40px rgb(241, 249, 246),
+    0px 0px 80px rgb(239, 242, 237);
+}
+/* Gallery Container */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(3, 1fr); /* 3 rows */
+    gap: 25px; /* Space between images */
+    max-width: 10px; /* Limit gallery width */
+    margin: 0 auto; /* Center the gallery */
+    padding: 70px;
+    position: relative;
+    overflow: hidden;
+    height: 25%;
+
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3columns */
+    grid-template-rows: repeat(6, 1fr); /* 3 rows */
+    gap: 25px; /* Space between images */
+    max-width: 550px; /* Limit gallery width */
+    margin: 0 auto; /* Center the gallery */
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    height: 50%; /* Adjust height as needed */
+
+}
+
+    
+
+
+/* Gallery Item */
+.gallery-item {
+    border: 1px solid #7be80e;
+    background-color: #dfdfdf2c;
+    box-shadow: 0 0 15px rgb(70, 130, 70),
+    0px 0px 15px green inset;
+    overflow: hidden; /* Ensure images don't overflow */
+    animation: fadeIn 2s;
+    
+    
+}
+.button{
+    position: center;
+    width: 10%;
+    height: 0in;
+}
+
+/* Image Styling */
+.gallery-item img {
+    width: 100%; /* Make images fill the container */
+    height: 90%; /* Maintain aspect ratio */
+    display: block;
+    transition: transform 0.3s ease; /* Smooth hover effect */
+
+}
+
+/* Hover Effect */
+.gallery-item:hover {
+    border-radius: 50%;
+    transition: 0.6s ease-in-out;
+    background-color: rgb(226, 229, 229);
+    
+}
+.gallery-item img:hover .stars{
+    display: block;
+    filter: drop-shadow(0 0 10px #4a9a0a);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Slide Animation */
+.gallery-item:nth-child(1) {
+    animation-delay: 0.5s;
+}
+
+.gallery-item:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.gallery-item:nth-child(3) {
+    animation-delay: 1.5s;
+}
+
+.gallery-item:nth-child(4) {
+    animation-delay: 2s;
+}
+
+.gallery-item:nth-child(5) {
+    animation-delay: 2.5s;
+}
+
+.gallery-item:nth-child(6) {
+    animation-delay: 3s;
+}
+
+.gallery-item:nth-child(7) {
+    animation-delay: 3.5s;
+}
+
+.gallery-item:nth-child(8) {
+    animation-delay: 4s;
+}
+
+.gallery-item:nth-child(9) {
+    animation-delay: 4.5s;
+}
+.gallery-item:nth-child(10) {
+    animation-delay: 5s;
+}
+.gallery-item:nth-child(11) {
+    animation-delay: 5.5s;
+}
+.gallery-item:nth-child(12) {
+    animation-delay: 6s;
+}
+.gallery-item:nth-child(13) {
+    animation-delay: 6.5s;
+}
+.gallery-item:nth-child(14) {
+    animation-delay: 7s;
+}
+.gallery-item:nth-child(15) {
+    animation-delay: 7.5s;
+}
